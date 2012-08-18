@@ -1,0 +1,27 @@
+{
+  "domain": "example.com",
+  "admin": "admin.example.com",
+  "time": {
+    "refresh": 28800,
+    "retry": 7200,
+    "expire": 864000,
+    "ttl": 86400
+  },
+  "ns": [
+    "ns1.example.com",
+    "ns2.example.com"
+  ],
+  "netmask": "10.0.0.0/23",
+  "hosts": {
+    "10.0.0.1": "gw",
+    "10.0.0.2": {
+      "name": "zelda",
+      "comment": "Testing Box"
+    },
+    "10.0.0.3": {
+      "name": "link",
+      "comment": "Another box for testing"
+    },
+    "10.0.1.1": "gw2"
+  }
+}

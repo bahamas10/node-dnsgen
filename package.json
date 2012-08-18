@@ -1,0 +1,26 @@
+{
+  "name": "dnsgen",
+  "description": "Generate DNS files using json",
+  "version": "0.0.0",
+  "author": "Dave Eddy <dave@daveeddy.com> (http://www.daveeddy.com)",
+  "contributors": [],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bahamas10/node-dnsgen.git"
+  },
+  "scripts": {
+    "test": "for f in tests/*.js; do echo \"$f\"; node \"$f\" || exit 1; done; echo 'Passed!'; exit 0"
+  },
+  "dependencies": {
+    "netmask": "~ 0.0.2"
+  },
+  "bin": {
+    "dnsgen": "./bin/dnsgen.js"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  },
+  "keywords": [ "dns", "bind", "djbdns", "tinydns" ]
+}
